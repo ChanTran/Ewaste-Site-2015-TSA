@@ -1,0 +1,154 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>About Electronic Waste - Wilson E-Waste</title>
+    
+	<link rel="stylesheet" href="../styleAbout.css" type="text/css"/>
+	<meta name="viewport" content="width-device-width, initial-scale-1.0">
+   <script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
+   <script src="../script.js"></script>
+   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+<script src="../jquery.fittext.js"></script>
+<script src="../swfobject_modified.js" type="text/javascript"></script>
+<script>
+  jQuery("#responsive_headline").fitText();
+</script>
+   <link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
+   <link href='http://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
+   <link href='http://fonts.googleapis.com/css?family=Titillium+Web' rel='stylesheet' type='text/css'>
+   <link href='http://fonts.googleapis.com/css?family=Ubuntu:300' rel='stylesheet' type='text/css'>
+<script type="text/javascript" src="../faga.js.txt"></script>
+ <script type="text/javascript">
+   jQuery(function(){
+  var menuOffset = jQuery('#cssmenu')[0].offsetTop;
+  jQuery(document).bind('ready scroll',function() {
+    var docScroll = jQuery(document).scrollTop();
+    if(docScroll >= menuOffset) {
+      jQuery('#cssmenu').addClass('fixed');
+    } else {
+      jQuery('#cssmenu').removeClass('fixed').removeAttr("width");
+	}
+   });
+});
+</script>
+<script type="text/javascript">
+$(document).on("click", "a", function () {
+
+    // get the href attribute
+    var newUrl = $(this).attr("href");
+
+    // veryfy if the new url exists or is a hash
+    if (!newUrl || newUrl[0] === "#") {
+        // set that hash
+        location.hash = newUrl;
+        return;
+    }
+
+    // now, fadeout the html (whole page)
+    $(".all").fadeOut(function () {
+        // when the animation is complete, set the new location
+        location = newUrl;
+    });
+	// prevent the default browser behavior.
+    return false;
+	 });
+</script>
+	
+</head>
+<div id='cssmenu'>
+<ul>
+   <li><a href="index.html">Home</a></li>
+   <li class='active'>
+   <a href="About.html">About</a></li>
+   <li><a href='Goals.html'>Our Goals</a></li>
+   <li><a href='Importance.html'>Importance</a></li>
+    <li><a href='https://www.wilsonsd.org/technology-engineering-department/'>TSA</a></li>
+    </li>
+</ul>
+</div>
+
+
+<body class="body">
+<div class="all">
+	<header class="mainheader">
+    <br>
+    <br>
+    <br>
+    <div class="background">
+    	<div class="edge">
+      </div>
+    </div>
+	<div class="bodyheader fadeInLeft">
+    <br>
+    <h1><font color="#1BAA2B"><u>Did You Know?</font></u></h1>
+    <h2>• E-waste usually comes from old TVs, outdated computers, printers, phones, other electronics no longer used.</h2>
+    <h3>• E-waste equals <font color="#FF1010">2%</font> of America’s trash in landfills which equals <font color="#FF1010">70%</font> of toxic waste
+</h3>
+    <h4>• Over <font color="#FF1010">$60</font> million in gold/silver are dumped every year</h4>
+    <h5>*According to the <u><a href="http://www.epa.gov/"><font color="#7A7A7A">Environmental Protection Agency</u></font></a></h5>
+    <br>
+    <br>
+    <br>
+    </div>
+	</header>
+<div class="video">
+<center><iframe width="420px" height="300px" margin="auto" align="middle"
+src="http://www.youtube.com/embed/UyIpG7UJKyI">
+</iframe></center>
+</div>    
+    
+<div class="mainContent">
+        		<article class="topcontent">
+            	<header>
+                <h2><u>History of E-Waste</u></h2>
+                  </header>
+                    <footer>
+                    	<p class="post-info"></p>
+                    </footer>
+                    
+                    <content>
+                    	<p>Electronic waste, as above, usually comes from cast-offs of televisions, desktops, keyboards, CPUs, printers, etc. In other words, anything that is not used anymore. Most states in the US allow the export of hazardous waste. If you've ever thrown out any digital waste, chances are they are somewhere else in the developing countries.
+                        </p>
+                        <p>Something that you probably did not know is that of the 2 million tons of digital products that were disposed of, only 18% was collected for recycling while the other 82% was disposed of in landfills (according to the <strong>Environmental Protection Agency</strong>)
+                       
+                        </p>
+                        <p>
+                        Returning back to where E-waste usually goes, developed countries such as the US find themselves exporting waste to developing countries such as India, Africa, and China. These countries have tried to prevent the import of e-waste, but soon found out that the laws were not working. China has tried to implement this in 2000, but still has e-waste arriving at their provinces.
+                        </p>
+                        <h5>We talk about the importance of properly disposing electronics. <u>Click here to check it out.<u></h5>
+                 
+
+                    </content>
+            </article>
+            <article class="bottomcontent">
+            <header>
+            <h2><u>Why is it Hazardous?</u></h2>
+            </header>
+             <footer>
+                    	<p class="post-info">What makes E-waste dangerous?</p>
+                    </footer>
+            <content>
+            <p><strong>1.</strong> Text Goes Here</p>
+            <p><strong>2.</strong> Text Goes Here</p>
+            <p><strong>3.</strong> Text Goes Here</p>
+            <p><strong>4.</strong> Text Goes Here</p>
+            </content>
+            </article>       
+</div>
+          </div>
+       
+
+
+      <footer class="mainFooter">
+            <p><center><img src="../bed.png" width="90" height="65" alt=""/></center></p>
+      <p><center><font color="#FFFFFF">Copyright 2015 &copy; All rights belong to <a href="#" title="Wilson School District"><u>Wilson School District</u></a></center></p>
+      <p><center>Have any questions? Feel free to ask us!</center></p></font>
+       </footer>
+
+<script type="text/javascript">
+swfobject.registerObject("FlashID");
+      </script>
+      </div>
+      </div>
+</html>

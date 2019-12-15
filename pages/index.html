@@ -1,0 +1,131 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>The Environment and E-Waste - Wilson E-Waste</title>
+	<link rel="stylesheet" href="../style.css" type="text/css"/>
+    <link type="text/css" href="../gallerystyle.css" rel="stylesheet">
+	<meta name="viewport" content="width-device-width, initial-scale-1.0">
+    <link href='http://fonts.googleapis.com/css?family=Spirax' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Satisfy' rel='stylesheet' type='text/css'>
+   <script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
+   <script src="../script.js"></script>
+   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+<script src="../jquery.fittext.js"></script>
+<script>
+  jQuery("#responsive_headline").fitText();
+</script>
+   <link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
+   <link href='http://fonts.googleapis.com/css?family=Titillium+Web' rel='stylesheet' type='text/css'>
+   <script type="text/javascript">
+   jQuery(function(){
+  var menuOffset = jQuery('#cssmenu')[0].offsetTop;
+  jQuery(document).bind('ready scroll',function() {
+    var docScroll = jQuery(document).scrollTop();
+    if(docScroll >= menuOffset) {
+      jQuery('#cssmenu').addClass('fixed');
+    } else {
+      jQuery('#cssmenu').removeClass('fixed').removeAttr("width");
+	}
+   });
+});
+</script>
+<script type="text/javascript">
+$(document).on("click", "a", function () {
+
+    // get the href attribute
+    var newUrl = $(this).attr("href");
+
+    // veryfy if the new url exists or is a hash
+    if (!newUrl || newUrl[0] === "#") {
+        // set that hash
+        location.hash = newUrl;
+        return;
+    }
+
+    // now, fadeout the html (whole page)
+    $(".all").fadeOut(function () {
+        // when the animation is complete, set the new location
+        location = newUrl;
+    });
+	// prevent the default browser behavior.
+    return false;
+	 });
+</script>
+<link href='http://fonts.googleapis.com/css?family=Ubuntu:300' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
+   
+</head>
+<div id='cssmenu'>
+<ul>
+   <li class='active'>
+   <a href="index.html">Home</a></li>
+   <li><a href="About.html">About</a></li>
+   <li><a href='Goals.html'>Our Goals</a></li>
+   <li><a href='Importance.html'>Importance</a></li>
+    <li><a href="https://www.wilsonsd.org/technology-engineering-department/">TSA</a></li>
+</ul>
+</div>
+<body class="body">
+<div class="all">
+<header class="mainheader">
+<img src="../header.jpg">
+</header>
+<div class="quote">
+<h2><font size="100"><font color="#81BD6F"><font face="Satisfy">“</font></font></font> We must be the change we wish to see in the world. <font size="100"><font face="Satisfy"><font color="#81BD6F">”</font></font></font></h2>
+<h4>-Mahatma Gandhi</h4>
+<br>
+</div>
+<div class="line">
+</div>
+<br>
+<br>
+<div id="polaroid">
+<figure>
+<img src="../waste-concrete.jpg">
+</figure>
+<figure>
+<img src="../reste-der-gesellschaft-iv.jpg">
+</figure>
+<figure>
+<img src="../nature-background-11.jpg">
+</figure>
+</div>
+<br>
+<br>
+<div class="line2">
+</div>
+<br>
+<br>
+    <div class="mainContent">
+	<article class="topcontent">
+            	<header>
+                	<h2>What is <font color="#1BAA2B">E-Waste?</font></h2>
+                  </header>
+                    <footer>
+                    	<p class="post-info"></p>
+                    </footer>
+                    
+                    <content>
+                    	<p>The term “E-waste” is an informal name for electronic devices, parts, products, etc. that have approached the end of their usefulness. Computers, televisions, copiers, stereos, VCRs, fax machines, and car batteries for example, that no longer work, or are no longer useful, are considered “E-waste.”</p>
+                        
+                       <p><img src="../Ewaste-pile.jpg" width="444" height="333" alt=""/></p>
+                       
+                       <h2>Why is E-Waste <font color="#E31F23">Harmful?</font></h2>
+                      
+                       <p>In 2009, 430 million new consumer electronics were sold in the U.S., while 5 million tons were in storage, and 2.37 million tons were ready for end of life management. Of the 2.37 million tons of E-waste in 2009, only about 12.5% was recycled. That leaves 2,073,750 tons, or 4,147,500,000 pounds of broken or useless electronics unaccounted for. It is what is done with this 4,147,500,000 pounds of unaccounted for E-waste that makes it so harmful to not only the environment, but to the people who live in third world countries. These statistics are in the U.S. alone. Worldwide 20 to 50 million metric tons of E-waste are disposed each year in landfills or incinerators, which can release harmful toxins into the air.</p>
+                       
+                       <p><img src="../Used_EEE___E-Waste_Import_and_E-Waste_Generated_in_Kyoto_Protocol_Non-Annex_I_Countries.png" width="481" height="289" alt=""/></p>
+                    
+                    </content>
+            </article>
+</div>
+</div>
+          </div>
+      <footer class="mainFooter">
+      <p><center><img src="../bed.png" width="90" height="65" alt=""/></center></p>
+      <p><center><font color="#FFFFFF">Copyright 2015 &copy; All rights belong to <a href="#" title="Wilson School District"><u>Wilson School District</u></a></center></p>
+      <p><center>Have any questions? Feel free to ask us!</center></p></font>
+       </footer>
+</div>
+</html>
